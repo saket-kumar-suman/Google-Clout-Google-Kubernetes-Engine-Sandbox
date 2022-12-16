@@ -1,7 +1,7 @@
 Task 1 commands:
 search kubernetes engine and copy zone from there and paste in below command
 
-gcloud container clusters get-credentials production --zone=CHANGE_ZONE
+gcloud container clusters get-credentials production --zone=us-east1-b
 nano sample.yaml
   # sandbox-metadata-test.yaml
   apiVersion: apps/v1
@@ -31,7 +31,7 @@ Task 2 command :-
 Before running below command change pool name and zone given in your lab under task 2
 
   gcloud container node-pools create POOL_NAME \
-  --cluster=production --zone=CHANGE_ZONE --machine-type=n1-standard-2 --image-type=cos_containerd  --sandbox type=gvisor
+  --cluster=production --zone=us-east1-b --machine-type=n1-standard-2 --image-type=cos_containerd  --sandbox type=gvisor
 kubectl get pod
 change pod name which you get after running above command
 

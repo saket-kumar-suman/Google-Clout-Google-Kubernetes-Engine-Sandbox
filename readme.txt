@@ -30,8 +30,7 @@ kubectl create -f sample.yaml
 Task 2 command :-
 Before running below command change pool name and zone given in your lab under task 2
 
-  gcloud container node-pools create POOL_NAME \
-  --cluster=production --zone=us-east1-b --machine-type=n1-standard-2 --image-type=cos_containerd  --sandbox type=gvisor
+  gcloud container node-pools create secure-pool --cluster=production --zone=us-east1-b --machine-type=n1-standard-2 --image-type=cos_containerd  --sandbox type=gvisor
 kubectl get pod
 change pod name which you get after running above command
 
